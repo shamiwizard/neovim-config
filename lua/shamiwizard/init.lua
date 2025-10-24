@@ -15,6 +15,7 @@ vim.keymap.set("n", "<leader>e", "<Cmd>Neotree<CR>")
 
 vim.opt.number = true
 vim.opt.tabstop = 2
+vim.opt.colorcolumn = '120'
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
