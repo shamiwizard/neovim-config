@@ -2,7 +2,6 @@ vim.g.mapleader = " " -- Set leader key before Lazy
  
 require("shamiwizard.lazy_init")
 
-
 vim.cmd.colorscheme("tokyonight")
 
 local builtin = require('telescope.builtin')
