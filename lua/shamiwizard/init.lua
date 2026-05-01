@@ -26,6 +26,7 @@ vim.opt.smartindent = true
 
 -- LSP start
 vim.lsp.enable("ruby-lsp")
+vim.lsp.enable('gopls')
 --vim.lsp.enable("lua-lsp")
 
 vim.diagnostic.config({

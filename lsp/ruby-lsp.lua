@@ -8,7 +8,7 @@ return {
   root_markers = { "Gemfile", ".git" },
 
   init_options = {
-    formatter = 'standard',
+    formatter = 'auto',
     linters = { 'standard' },
     addonSettings = {
       ["Ruby LSP Rails"] = {
