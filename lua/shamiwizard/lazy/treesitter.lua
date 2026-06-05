@@ -1,16 +1,21 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
-  config = function()
-    local configs = require("nvim-treesitter.configs")
- 
-    configs.setup({
-      ensure_installed = {
-        "c", "lua", "vim", "vimdoc", "elixir", "javascript", "html", "python", "typescript","css", "ruby", "go"
-      },
+  lazy = false,
+  setup = {
+--	install_dir = vim.fn.stdpath("~/treesitter-parsers/"),
       sync_install = false,
       highlight = { enable = true },
       indent = { enable = true },
-    })
-  end
+  }
+--  config = function()
+--    local configs = require("nvim-treesitter.configs")
+--
+--    configs.setup({
+--      install_dir = vim.fn.stdpath("~/treesitter-parsers/"),
+--      sync_install = false,
+--      highlight = { enable = true },
+--      indent = { enable = true },
+--    })
+--  end
 }

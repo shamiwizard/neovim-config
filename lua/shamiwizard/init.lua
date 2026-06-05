@@ -1,6 +1,7 @@
 vim.g.mapleader = " " -- Set leader key before Lazy
  
 require("shamiwizard.lazy_init")
+require("nvim-treesitter").install({ "ruby", "go", "javascript", "css", "html", "bash", "sql", "lua" })
 
 vim.cmd.colorscheme("tokyonight")
 

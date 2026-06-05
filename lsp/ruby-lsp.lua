@@ -8,6 +8,10 @@ return {
   root_markers = { "Gemfile", ".git" },
 
   init_options = {
+    enabledFeatures = {
+      completion = true,
+      definition = true,
+    },
     formatter = 'auto',
     linters = { 'standard' },
     addonSettings = {
