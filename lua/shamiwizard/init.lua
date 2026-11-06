@@ -1,5 +1,5 @@
 vim.g.mapleader = " " -- Set leader key before Lazy
- 
+
 require("shamiwizard.lazy_init")
 require("nvim-treesitter").install({ "ruby", "go", "javascript", "css", "html", "bash", "sql", "lua" })
 
@@ -26,9 +26,12 @@ vim.opt.smartindent = true
 -- Vim Opt end
 
 -- LSP start
-vim.lsp.enable("ruby-lsp")
+vim.lsp.enable('ruby_lsp')
+vim.lsp.enable('rubocop')
 vim.lsp.enable('gopls')
---vim.lsp.enable("lua-lsp")
+vim.lsp.enable('lua_ls')
+--vim.lsp.enable('ts_ls')
+--vim.lsp.enable('tsc')
 
 vim.diagnostic.config({
   virtual_text = true,
